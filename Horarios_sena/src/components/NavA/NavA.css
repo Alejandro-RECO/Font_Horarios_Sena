@@ -1,0 +1,14 @@
+:root {
+    --primary-color: #3498db;
+    --secondary-color: #e74c3c;
+    --accent-color: #39A900;
+    --white-text: #FFFFFF;
+}
+
+.block2 {
+    background-color: var(--accent-color);
+    grid-column: 2; /* Se ubica en la columna 2 */
+    grid-row: 1 / span 2; /* Se ubica en la fila 1 y ocupa 2 filas */
+    width: 100%;
+    height: 80px; /* Altura de 45px */
+}
