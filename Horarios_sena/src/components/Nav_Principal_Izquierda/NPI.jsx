@@ -1,13 +1,20 @@
+import { NavTop } from '../NavA/NavTop'
+import { NavLateral } from '../navLateral/NavLateral'
+import { Search } from '../serch/Search'
 import './NPI.css'
-import { Search } from '../serch/search'
-import { NavA } from '../NavA/NavA'
+
 
 
 export const NavLeft = () =>{
     return(
-        <div className="grid-container">
+        <div className="container">
+            <div className="containerLateral">
             <Search />
-            <NavA />
+            <NavLateral />
+            </div>
+            <div className="containerTop">
+               <NavTop />
+            </div>
         </div>
     )
 }

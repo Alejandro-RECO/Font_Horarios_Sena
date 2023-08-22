@@ -1,0 +1,37 @@
+
+.navSuperior{
+    height: 100px;
+    width: 100%;
+    background-color: var(--accent-color);
+    display: flex;
+    align-items: center;
+
+    & .navSuperior-container{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 20px;
+
+        .container_img{
+            height: 100%;
+            
+            & .container-img{
+                height: 100%;
+            }
+        }
+
+        & .container-star{
+            display: flex;
+            margin-right: 80px;
+            height: 100%;
+            width: 100px;
+            color: var(--white-text);
+            font-size: 40px;
+            gap: 50px;
+        }
+
+    }
+
+
+}

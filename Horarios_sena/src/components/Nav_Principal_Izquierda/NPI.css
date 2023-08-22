@@ -1,18 +1,27 @@
+
 :root {
-    --primary-color: #3498db;
-    --secondary-color: #e74c3c;
-    --accent-color: #2ecc71;
+  --primary-color: #3498db;
+  --secondary-color: #e74c3c;
+  --accent-color: #38a900;
+  --white-text: #FFFFFF;
 }
 
-  
-  .grid-container {
-    display: grid;
-    grid-template-columns: 25% auto; /* 25% para el bloque 1, el resto para el bloque 2 */
-    grid-gap: 1px; /* Espacio entre los bloques */
-    height: 100vh; /* Tamaño de pantalla completo */
-  }
-  
-  
-  
+.container{
+  display: flex;
+  gap: 5px;
+  width: 100%;
+  /* height: 100vh; */
+}
+.containerLateral{
+  width: 324.25px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px  ;
+}
+.containerTop{
+ width: 100%;
+}
+
+
 
   
