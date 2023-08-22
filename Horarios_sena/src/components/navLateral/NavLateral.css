@@ -1,13 +1,17 @@
-:root {
-    --primary-color: #3498db;
-    --secondary-color: #e74c3c;
-    --accent-color: #38a900;
-    --white-text: #FFFFFF;
-}
+
 
 .NavLateral{
-    height: 79.7vh;
+    height: 850px;
     background-color: var(--accent-color);
+    display: flex;
+    flex-direction: column;
+    gap: 75px;
+    position: fixed;
+    width: 310px;
+    top: 195px;
+    z-index: 3;
+    border-radius: 0 5px 0 0;
+
 
     & .list-container{
         /* border: 1px solid red; */
@@ -66,15 +70,9 @@
         font-weight: lighter;
         margin: 20px;
         border-bottom: 2px solid var(--white-text);
-        margin-bottom: 50px;
-
-
-        & .info-img{
-            padding-bottom: 30px;
-        }
+        gap: 20px;
         
         & .info-links{
-            margin-top: 20px;
             display: flex;
             flex-direction: column;
             gap: 10px;

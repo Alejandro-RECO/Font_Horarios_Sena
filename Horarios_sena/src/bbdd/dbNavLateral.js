@@ -6,5 +6,4 @@ export const dbNavLateral = [
     { id : '5' , logo :'fa-solid fa-building', texto : 'SEDE'},
     { id : '6' , logo :'fa-solid fa-list-ol', texto : 'TRIMESTRE'},
     { id : '7' , logo :'fa-solid fa-calendar-days', texto : 'HORARIO'},
-
 ]

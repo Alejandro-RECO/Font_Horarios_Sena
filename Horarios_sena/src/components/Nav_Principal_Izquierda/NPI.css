@@ -1,9 +1,9 @@
 
 :root {
-  --primary-color: #3498db;
-  --secondary-color: #e74c3c;
   --accent-color: #38a900;
   --white-text: #FFFFFF;
+  --blue-dark: #00324D;
+  --green-clear: #dcffca;
 }
 
 .container{
@@ -13,13 +13,18 @@
   /* height: 100vh; */
 }
 .containerLateral{
-  width: 324.25px;
+  max-width: 312.25px;
+  width: 100%;
   display: flex;
   flex-direction: column;
-  gap: 5px  ;
+  gap: 5px ;
+  max-height: 1001px;
+  height: 100%;
 }
 .containerTop{
  width: 100%;
+ display: flex;
+ flex-direction: column;
 }
 
 

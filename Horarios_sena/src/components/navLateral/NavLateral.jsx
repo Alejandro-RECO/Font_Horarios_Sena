@@ -1,6 +1,7 @@
+
 import { Iconos } from '../iconos/Iconos'
 import './NavLateral.css'
-import { dbNavLateral } from './dbNAvLateral'
+import { dbNavLateral } from '../../bbdd/dbNAvLateral'
 
 export const NavLateral = ()=>{
     return(
@@ -10,7 +11,7 @@ export const NavLateral = ()=>{
                 { dbNavLateral.map( lista =>(
                         <li className='list-li' key={lista.id}>
                             <a href="#" className='list-a'>
-                                <Iconos icono={lista.logo} />
+                                <Iconos icono={lista.logo}/>
                                 <span className='list-span'>{lista.texto}</span>
                             </a>
                         </li>
@@ -30,5 +31,6 @@ export const NavLateral = ()=>{
 
             </div>
         </div>
+        
     )
 }

@@ -1,3 +1,4 @@
+import { Central } from '../Central/Central'
 import { NavTop } from '../NavA/NavTop'
 import { NavLateral } from '../navLateral/NavLateral'
 import { Search } from '../serch/Search'
@@ -14,6 +15,7 @@ export const NavLeft = () =>{
             </div>
             <div className="containerTop">
                <NavTop />
+                <Central />
             </div>
         </div>
     )
