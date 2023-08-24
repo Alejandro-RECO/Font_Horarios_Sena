@@ -2,15 +2,23 @@
 import './Central.css'
 import { Iconos } from '../iconos/Iconos'
 import { dbNavLateral } from '../../bbdd/dbNAvLateral'
+import { Products } from '../Productos/Products'
+import { useState } from 'react'
 
  
 
 export const Central = ()=>{
+
+    const [mProducts, getProducts] = useState(false)
+
+    const handelClick = ()=>{
+        getProducts(!mProducts)
+    }
+
     return(
         <div className="containerCentral">
-            <Search placeholder='BUSCAR'/>
-            <Card info='INFO' />
-
+            <Search placeholder='BUSCAR' mostrar={handelClick}/>
+            { mProducts === true ? <Card info='INFO'/> : <Products />}
         </div>
     )
 }
@@ -23,8 +31,8 @@ const Search = (props)=>{
                     <Iconos icono='fa-solid fa-magnifying-glass'/>
                     <input className='search-input' type="text"  placeholder={props.placeholder} />
                 </div>
-                <button>
-                    <Iconos icono='fa-solid fa-circle-plus' />
+                <button onClick={props.mostrar}>
+                    <Iconos icono='fa-solid fa-circle-plus'/>
                 </button>
             </div>
         </div>

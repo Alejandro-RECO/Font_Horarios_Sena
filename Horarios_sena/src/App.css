@@ -1,0 +1,10 @@
+.targets{
+    padding-top: 90px;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    width: 95%;
+    z-index: 1;
+}
