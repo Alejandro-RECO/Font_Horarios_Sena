@@ -3,7 +3,6 @@ import { Iconos } from '../iconos/Iconos'
 import './Search.css'
 
 //Agregando commit de recuperacion
-
 export const Search = ({ handleComponentClick })=>{
     return(
         <div className="navLateral">
