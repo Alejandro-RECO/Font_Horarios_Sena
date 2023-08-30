@@ -1,9 +1,9 @@
 /* eslint-disable react/prop-types */
-import { Iconos } from '../iconos/Iconos'
-import './Search.css'
+import { Iconos } from '../../iconos/Iconos'
+import './NavSearch.css'
 
 //Agregando commit de recuperacion
-export const Search = ({ handleComponentClick })=>{
+export const NavSearch = ({ handleComponentClick })=>{
     return(
         <div className="navLateral">
             <div className="links">

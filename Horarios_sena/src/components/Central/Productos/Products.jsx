@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
-import { dataBase } from '../../service/bbdd';
-import { Target } from '../Targets/Target';
+import { dataBase } from '../../../service/bbdd';
+import { Target } from '../../Targets/Target';
 
 export const Products = () => {
   const [data, setData] = useState([]);

@@ -1,5 +1,5 @@
 
-import { Iconos } from '../iconos/Iconos'
+import { Iconos } from '../../iconos/Iconos'
 import './NavTop.css'
 
 export const NavTop = ()=>{

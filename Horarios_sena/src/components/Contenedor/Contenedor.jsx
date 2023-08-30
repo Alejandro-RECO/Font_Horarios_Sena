@@ -1,13 +1,13 @@
 import { useState } from 'react'
-import { Central } from '../Central/Central'
-import { NavTop } from '../NavA/NavTop'
-import { NavLateral } from '../NavLateral/NavLateral'
-import { Search } from '../serch/Search'
-import './NPI.css'
+import './Contenedor.css'
+import { Central } from '../Central/Central/Central'
+import { NavTop } from '../Navs/NavTop/NavTop'
+import { NavLateral } from '../Navs/navLateral/NavLateral'
+import { NavSearch } from '../Navs/NavSearch/NavSearch'
 
 
 
-export const NavLeft = () =>{
+export const Contenedor = () =>{
 
     const [activeComponent, setActiveComponent] = useState(0);  
 
@@ -19,11 +19,11 @@ export const NavLeft = () =>{
     return(
         <div className="container">
             <div className="containerLateral">
-            <Search handleComponentClick={handleComponentClick}/>
-            <NavLateral handleComponentClick={handleComponentClick}/>
+                <NavSearch handleComponentClick={handleComponentClick}/>
+                <NavLateral handleComponentClick={handleComponentClick}/>
             </div>
             <div className="containerTop">
-               <NavTop />
+                <NavTop />
                 <Central activeComponent={activeComponent} />
             </div>
         </div>

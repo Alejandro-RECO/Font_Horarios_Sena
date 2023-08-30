@@ -1,6 +1,6 @@
 
 import './App.css'
-import { NavLeft } from './components/Nav_Principal_Izquierda/NPI.jsx'
+import { Contenedor } from './components/Contenedor/Contenedor'
 
 
 const App = () => {
@@ -8,7 +8,7 @@ const App = () => {
   return (
     <>
       <div className='Container'>
-        <NavLeft />
+        <Contenedor />
       </div>
     </>
   )

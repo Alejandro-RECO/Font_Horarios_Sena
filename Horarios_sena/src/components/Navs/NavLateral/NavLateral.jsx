@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
 
-import { Iconos } from '../iconos/Iconos'
+import { Iconos } from '../../iconos/Iconos'
 import './NavLateral.css'
 
 export const NavLateral = ({ handleComponentClick })=>{
