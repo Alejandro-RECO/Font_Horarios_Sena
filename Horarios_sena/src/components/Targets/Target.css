@@ -1,51 +1,92 @@
 .target{
-    height: 291px;
+    height: 310px;
     width: 295px;
-    border-radius: 10px;
+    border-radius:14px 14px;
     background-color: var(--green-clear);
+    /* border: 2px solid var(--blue-dark); */
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
 
+
+
     & .target-top{
         background-color: var( --blue-dark);
-        height: 145px;
-        width: 276px;
-        margin: 10px;
-        border-radius: 10px;
-        font-size: 2rem;
+        height: 174.6px;
+        width: 100%;
+        border-radius: 10px 10px 0 0 ;
         display: flex;
         flex-direction: column;
-        align-items: center;
         justify-content: center;
+        align-items: center;
         text-align: center;
-        color: var(--green-clear);
-        letter-spacing: 2px;
+        color: var(--white-text);
+
+        & .top-img{
+            height: 95px;
+            width: 95px;
+            margin-bottom: 20px;
+            border-radius: 100%;
+            border: 2px solid var(--green-clear);
+        }
+
+        & .top-h1{
+            padding: 0 0 10px 10px;
+            letter-spacing: 2px;
+            font-size: 1.5rem;
+
+            
+        }
     }
 
     & .target-bottom{
         display: flex;
         flex-direction: column;
         justify-content: center;
+        align-items: center;
         text-align: center;
+        padding: 0 20px 0 20px;
+        height: 116.4px;
+        box-sizing: border-box;
+        
+        & .bottom-info{
+            margin:20px 0 10px 0;
 
-        & .bottom-p{
-            padding-top: 20px;
-            font-size: 16px;
+            & .bottom-h2{
+                font-weight: bolder;
+            }
+    
+            & .bottom-p{
+                font-size: 13px;
+            }
         }
+
+
         & .bottom-button{
-            margin: 30px;
+            margin-top: 10px;
             height: 30px;
             width: 120px;
             border-radius: 10px;
             background-color: var(--blue-dark);
             cursor: pointer;
             font-size: 12px;
-            color: var(--green-clear);
+            color: var(--white-text);
+            border: 2px solid var(--blue-dark);
             letter-spacing: 1px;
-
+        }
+        & .bottom-button:hover{
+            transition: .5s;
+            background-color: var(--white-text);
+            color: var(--blue-dark);
         }
     }
+
+}
+
+& .target:hover{
+    cursor: pointer;
+    box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    transition: .5s;
 
 }

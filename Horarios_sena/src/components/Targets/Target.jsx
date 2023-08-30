@@ -6,10 +6,18 @@ export const Target = (props) =>{
     return(
         <div className="target">
             <div className="target-top">
-                <h1>Precio: {props.title}</h1>
+                <img
+                    className='top-img'
+                    alt='El avatar de midudev'
+                    src={`https://unavatar.io/${props.userName}`}
+                />
+                <h1 className='top-h1'>{props.title}</h1>
             </div>
             <div className="target-bottom">
-                <p className='bottom-p'>Cantidad: {props.info}</p>
+                <div className="bottom-info">
+                    <h2 className='bottom-h2'>INFORMACIÓN</h2>
+                    <p className='bottom-p'>{props.info}</p>
+                </div>
                 <button className='bottom-button'>ACTUALIZAR</button>
             </div>
         </div>
