@@ -1,8 +1,9 @@
+/* eslint-disable react/prop-types */
 
 import { Iconos } from '../../iconos/Iconos'
 import './NavTop.css'
 
-export const NavTop = ()=>{
+export const NavTop = (props)=>{
     return(
         <div className="navSuperior">
             <div className="navSuperior-container">
@@ -15,7 +16,7 @@ export const NavTop = ()=>{
                     <a href="#">
                         <Iconos icono='fa-regular fa-user' />
                     </a>
-                    <a href="#">
+                    <a href="#" onClick={props.onClick}>
                         <Iconos icono='fa-solid fa-arrow-right-from-bracket' />
                     </a>
                 </div>

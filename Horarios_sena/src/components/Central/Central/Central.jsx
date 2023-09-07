@@ -18,9 +18,7 @@ export const Central = ( {activeComponent})=>{
         <div className="containerCentral">
             <Search placeholder='BUSCAR'/>
             {/* Dependiendo de la eleccion del usuario de asigna un numero al componente y se renderiza partiendo de ello */}
-            {componentMap[activeComponent]}  
-
-            <Forms />  
+            {componentMap[activeComponent]}    
         </div>
 
     )

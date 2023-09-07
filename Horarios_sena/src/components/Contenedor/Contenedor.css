@@ -1,11 +1,4 @@
 
-:root {
-  --accent-color: #38a900;
-  --white-text: #FFFFFF;
-  --blue-dark: #00324D;
-  --green-clear: #dcffca;
-}
-
 .container{
   display: flex;
   gap: 5px;

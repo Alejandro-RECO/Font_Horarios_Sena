@@ -18,3 +18,12 @@ export const dbInstructores = [
     { id : '6', userName : 'luisrevolledocoronado', nombre: 'Luis Revolledo', info : 'Coach de desarrollo personal'},
     
 ]
+
+
+export const opciones = [
+    { value: 'Cédula de Ciudadanía', label: 'Cédula de Ciudadanía' },
+    { value: 'Tarjeta de Identidad', label: 'Tarjeta de Identidad' },
+    { value: 'Cédula de Extranjería', label: 'Cédula de Extranjería' },
+    { value: 'Número ciego SENA', label: 'Número ciego SENA ' },
+    { value: 'Pasaporte', label: 'Pasaporte' },
+];

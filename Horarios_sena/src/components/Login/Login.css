@@ -1,0 +1,102 @@
+.login{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+
+    & .login-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 506px;
+        width: 450px;
+        border: 4px solid var( --blue-dark);
+        border-radius: 15px;
+
+        & .login-header{
+            height: 75px;
+            background-color: var(--blue-dark);
+            width: 100%;
+            text-align: center;
+            padding: 10px;
+            color: var(--white-text);
+            box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+
+            & .login-header__h1{
+                letter-spacing: 5px;
+                font-weight: bold;
+                font-size: 20px;
+                padding-bottom: 2px;
+            }
+            & .login-header-p{
+                letter-spacing: 2px;
+                font-size: 15px;
+            }
+        }
+    }
+
+    & .login-body{
+        display: flex;
+        flex-direction: column;
+        height: 60%;
+        width: 100%;
+        padding: 10px 20px 10px 20px;
+        gap: 5px;
+
+        & .ligin-body__label{
+            margin-left: 20px;
+            color: var(--blue-dark);
+            font-weight: bolder;
+            font-size: 1em;
+            margin-top: 15px;
+
+        }
+
+        & .ligin-body__select{
+            border: 1px solid var(--blue-dark);
+            padding: 10px;
+            border-radius: .3rem;
+        }
+
+        & .ligin-body__input{
+            border: 1px solid var(--blue-dark);
+            padding: 10px;
+            border-radius: .3rem;
+        }
+    }
+
+    & .login-footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: var(--blue-dark);
+
+
+        & .login-footer__a{
+            font-size: 15px;
+            line-height: 23px;
+        }
+        & .login-footer__a:hover{
+            cursor: pointer;
+        }
+
+        & .login-footer__button{
+            margin-top: 20px;
+            color: var(--white-text);
+            padding: 9px 17px 9px 17px;
+            border-radius: .5rem;
+            background-color: var(--blue-dark);
+            font-size: 1rem;
+            border: 1.5px solid var(--blue-dark);
+        }
+        & .login-footer__button:hover{
+            cursor: pointer;
+            background-color: var(--white-text);
+            color: var(--blue-dark);
+            transition: .2s;
+        }
+    }
+
+}
