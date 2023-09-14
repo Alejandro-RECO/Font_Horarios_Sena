@@ -1,15 +1,15 @@
 export const dataBase = async () => {
     try {
-        const response = await fetch('http://localhost:5000/products');
-        const json = await response.json();
-        const products = json.products;
+        const response = await fetch('http://localhost:5000/users');
+        const jsonData = await response.json();
+        const users = jsonData;
 
-        console.log('datos ',json)
+        console.log('datos ', jsonData)
 
-        return products.map(product => ({
-            id: product.name,
-            price: product.price,
-            quantity: product.quantity
+        return users.map(users => ({
+            id: users[0],
+            userName: users[1],
+            password: users[2]
         }));
     } catch (e) {
         throw new Error('Error fetching data');

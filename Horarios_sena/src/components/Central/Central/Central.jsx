@@ -3,12 +3,13 @@ import './Central.css'
 import { Iconos } from '../../iconos/Iconos'
 import { Instructores } from '../ComponetesCentral/Instructores/Instructores'
 import { Card } from '../Card/Card'
-import { Forms } from '../../Forms/Forms'
+import { Products } from '../Productos/Products'
 
 // Mapeo de componentes para renderizar, dependiendo del numero asignado mediente funcion ejecutada en NavLateral y NavSearch
 const componentMap = {
     0: <Card info='INFO'/>, 
-    1: <Instructores />
+    1: <Instructores />,
+    2: <Products />
 }
  
 // Componente de renderizaje de informacion principal del aplicativo

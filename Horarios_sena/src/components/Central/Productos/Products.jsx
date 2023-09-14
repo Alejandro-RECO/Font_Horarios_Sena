@@ -11,17 +11,16 @@ export const Products = () => {
         const searchData = await dataBase();
         setData(searchData);
       } catch (error) {
-        console.error('Error fetching data:');
+        console.error('Error fetching data-:', error);
       }
     };
-
     fetchData();
   }, []);
-
+  console.log('datos vista',data);
   return (
     <div className='targets'>
-        {data.map(product => (
-            <Target key={product.id} title={product.price} info={product.quantity}/>
+        {data.map(users => (
+            <Target key={users.id} title={users.userName} info={users.password} userName={users.userName}/>
         ))}
     </div>
   );

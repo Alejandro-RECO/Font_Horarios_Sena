@@ -7,9 +7,10 @@ export const Instructores = () =>{
 
         <div className='targets'>
             {/* Mapeo base de datos de y renderizado de las mismas */}
-            {dbInstructores.map(instructor => (
+            { dbInstructores.map(instructor => (
                 <Target key={instructor.id} title={instructor.nombre} info={instructor.info} userName={instructor.userName}/>
             ))}
+            
     </div>
     )
 }

@@ -1,6 +1,13 @@
 import { Iconos } from "../iconos/Iconos"
+import { useForm } from 'react-hook-form';
 
 export const Forms = () =>{
+    const {register, handleSubmit} =useForm
+
+    const onSubmit =(data)=>{
+        console.log(data);
+    }
+
     return (
         <section className="form_section">
             <div className="form_header">
@@ -8,7 +15,7 @@ export const Forms = () =>{
                 <h1>INSTRUCTOR</h1>
             </div>
 
-            <form action="POST">
+            <form onSubmit={handleSubmit(onSubmit)}>
                 <label htmlFor="Nombre">Nombre</label>
                 <input type="text" />
             </form>
